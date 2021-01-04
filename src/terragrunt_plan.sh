@@ -4,10 +4,11 @@ function terragruntPlan {
   # Gather the output of `terragrunt plan`.
 
   echo "plan: info: planning Terragrunt configuration in ${tfWorkingDir}"
-#  planOutput=$(${tfBinary} init ${*} 2>&1)
-#  ls -al
-#  cat .terragrunt-cache/*/*/*
+  planOutput=$(${tfBinary} init ${*} 2>&1)
+  cat .terragrunt-cache/*/*/*
   planOutput=$(terragrunt plan -detailed-exitcode ${*} 2>&1)
+  tree
+  cat .terragrunt-cache/*/*/*
   planExitCode=${?}
   planHasChanges=false
   planCommentStatus="Failed"
