@@ -2,10 +2,6 @@
 
 function terragruntPlan {
   # Gather the output of `terragrunt plan`.
-
-  echo "plan: info: planning Terragrunt configuration in ${tfWorkingDir}"
-  planOutput=$(${tfBinary} init ${*} 2>&1)
-  cat .terragrunt-cache/*/*/*
   planOutput=$( terragrunt plan --terragrunt-debug 2>&1)
   tree
   cat .terragrunt-cache/*/*/*
