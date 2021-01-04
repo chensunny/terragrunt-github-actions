@@ -6,7 +6,7 @@ function terragruntPlan {
   echo "plan: info: planning Terragrunt configuration in ${tfWorkingDir}"
   planOutput=$(${tfBinary} init ${*} 2>&1)
   cat .terragrunt-cache/*/*/*
-  planOutput=$(terragrunt plan -detailed-exitcode ${*} 2>&1)
+  planOutput=$( terragrunt plan -detailed-exitcode --terragrunt-debug ${*} 2>&1)
   tree
   cat .terragrunt-cache/*/*/*
   planExitCode=${?}
