@@ -2,10 +2,7 @@
 
 function terragruntPlan {
   # Gather the output of `terragrunt plan`.
-  planOutput=$( terragrunt plan --terragrunt-debug 2>&1)
-  tree
-  tree .terragrunt-cache
-  cat .terragrunt-cache/*/*/*
+  planOutput=$(${tfBinary} plan -detailed-exitcode -input=false ${*} 2>&1)
   planExitCode=${?}
   planHasChanges=false
   planCommentStatus="Failed"
