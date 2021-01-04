@@ -2,6 +2,8 @@
 
 function terragruntPlan {
   # Gather the output of `terragrunt plan`.
+  pwd
+  cat  .terragrunt-cache/*/*/*
   echo "plan: info: planning Terragrunt configuration in ${tfWorkingDir}"
   planOutput=$(${tfBinary} plan -detailed-exitcode  ${*} 2>&1)
   planExitCode=${?}
