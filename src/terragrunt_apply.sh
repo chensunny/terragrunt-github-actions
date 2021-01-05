@@ -23,8 +23,7 @@ function terragruntApply {
   fi
 
   # Comment on the pull request if necessary.
-  echo "GITHUB_EVENT_NAME : $GITHUB_EVENT_NAME"
-  if [ "$GITHUB_EVENT_NAME" == "pull_request" ] && [ "${tfComment}" == "1" ]; then
+  if  [ "${tfComment}" == "1" ]; then
     applyCommentWrapper="#### \`${tfBinary} apply\` ${applyCommentStatus}
 <details><summary>Show Output</summary>
 
