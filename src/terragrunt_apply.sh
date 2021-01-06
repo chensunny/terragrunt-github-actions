@@ -46,6 +46,7 @@ ${applyOutput}
     else
       applyCommentsURL=$(cat ${GITHUB_EVENT_PATH} | jq -r .repository.comments_url)
     fi
+    echo "applyCommentsURL: applyCommentsURL"
     echo "apply: info: commenting on the pull request"
     echo "${applyPayload}" | curl -s -S -H "Authorization: token ${GITHUB_TOKEN}" --header "Content-Type: application/json" --data @- "${applyCommentsURL}" > /dev/null
   fi
