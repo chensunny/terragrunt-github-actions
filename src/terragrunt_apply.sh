@@ -45,7 +45,7 @@ ${applyOutput}
     if [ "$GITHUB_EVENT_NAME" == "pull_request" ]; then
       applyCommentsURL=$(cat ${GITHUB_EVENT_PATH} | jq -r .pull_request.comments_url)
     else
-      applyCommentsURL=$(cat ${GITHUB_EVENT_PATH} | jq -r .repository.comments_url)
+      applyCommentsURL=$(cat ${GITHUB_EVENT_PATH} | jq -r .client_payload.github.payload.issue.comments_url)
     fi
     echo "applyCommentsURL: $applyCommentsURL"
 #    echo "applyPayload:  $applyPayload"
