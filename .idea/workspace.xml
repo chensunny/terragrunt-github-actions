@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1ebcbd3f-82b4-4597-9520-c9cfefd183f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/terragrunt_apply.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/terragrunt_apply.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mazHcGhW2f2NRzic3APzKhkZO5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="224" y="-868" width="795" height="677" key="find.popup" timestamp="1609931836840">
+      <screen x="-339" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="224" y="-868" width="795" height="677" key="find.popup/-339.-1057.1920.1057/0.23.1440.813@-339.-1057.1920.1057" timestamp="1609835675431" />
+    <state x="224" y="-868" width="795" height="677" key="find.popup/-339.-1057.1920.1057/0.23.1440.815@-339.-1057.1920.1057" timestamp="1609931836840" />
+    <state x="422" y="169" width="596" height="522" key="find.popup/0.23.1440.815@0.23.1440.815" timestamp="1609778166538" />
+  </component>
+</project>

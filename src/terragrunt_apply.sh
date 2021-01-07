@@ -22,9 +22,6 @@ function terragruntApply {
     echo
   fi
 
-  echo "GITHUB_EVENT_NAME: $GITHUB_EVENT_NAME"
-  echo "GITHUB_EVENT_PATH: $GITHUB_EVENT_PATH"
-  cat ${GITHUB_EVENT_PATH}
   # Comment on the pull request if necessary.
   if  [ "${tfComment}" == "1" ]; then
     applyCommentWrapper="#### \`${tfBinary} apply\` ${applyCommentStatus}
@@ -47,8 +44,6 @@ ${applyOutput}
     else
       applyCommentsURL=$(cat ${GITHUB_EVENT_PATH} | jq -r .client_payload.github.payload.issue.comments_url)
     fi
-    echo "applyCommentsURL: $applyCommentsURL"
-#    echo "applyPayload:  $applyPayload"
     echo "apply: info: commenting on the pull request"
     echo "${applyPayload}" | curl -s -S -H "Authorization: token ${GITHUB_TOKEN}" --header "Content-Type: application/json" --data @- "${applyCommentsURL}"
   fi
