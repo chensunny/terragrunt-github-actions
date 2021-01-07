@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ebcbd3f-82b4-4597-9520-c9cfefd183f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/terragrunt_apply.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/terragrunt_apply.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
